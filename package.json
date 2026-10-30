@@ -1,0 +1,33 @@
+{
+  "name": "paid_automation_new_ui",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test-and-report-newUi": "npx playwright test /src/tests/New_E2E_Testing.spec.js && node ./src/utils/generate-report.js",
+    "test-and-report-oldui": "npx playwright test /src/tests/Old_E2E_Testing.spec.js && node ./src/utils/generate-report.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.50.0",
+    "@types/node": "^22.10.7",
+    "allure-commandline": "^2.32.0",
+    "prettier": "^3.5.3"
+  },
+  "dependencies": {
+    "allure-playwright": "^3.0.9",
+    "cheerio": "^1.0.0",
+    "dotenv": "^16.4.7",
+    "google-auth-library": "^9.15.1",
+    "googleapis": "^144.0.0",
+    "imap": "^0.8.19",
+    "imap-simple": "^5.1.0",
+    "mailparser": "^3.7.2",
+    "playwright": "^1.50.0",
+    "quoted-printable": "^1.0.1",
+    "winston": "^3.17.0"
+  }
+}
